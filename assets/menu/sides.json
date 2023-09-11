@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Garlic Parmesan Fries",
+    "price": 5.25,
+    "description": "Crispy fries tossed in garlic and Parmesan cheese."
+  }, {
+    "name": "Loaded Baked Potato",
+    "price": 3.99,
+    "description": "A baked potato topped with butter, sour cream, cheddar cheese, and bacon bits."
+  }, {
+    "name": "French Fries",
+    "price": 4.99,
+    "description": "Crispy, fried, and salted fries served warm with your meal."
+  }
+]

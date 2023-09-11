@@ -1,0 +1,23 @@
+[
+  {
+    "name": "New York Strip Steak",
+    "price": 13.86,
+    "description": "A succulent 12-ounce USDA Choice strip steak cooked to your liking and served with your choice of side."
+  }, {
+    "name": "Grilled Salmon",
+    "price": 12.50,
+    "description": "Fresh Atlantic salmon fillet seasoned and grilled to perfection, drizzled with lemon herb butter, and served with your choice of side."
+  }, {
+    "name": "Barbecue Ribs",
+    "price": 11.95,
+    "description": "St. Louis-style ribs slow-smoked and basted with our signature barbecue sauce. Served with coleslaw and cornbread."
+  }, {
+    "name": "Grilled Shrimp Skewers",
+    "price": 14.99,
+    "description": "Jumbo shrimp skewers marinated in garlic and herbs, grilled to perfection, and served with rice pilaf and grilled vegetables."
+  }, {
+    "name": "Lobster Tail",
+    "price": 17.99,
+    "description": "Sizzling, succulent lobster meat grilled to perfection, seasoned lightly with a garlic and lemon drizzle."
+  }
+]

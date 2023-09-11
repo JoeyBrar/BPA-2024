@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Signature Gameday Burger",
+    "price": 13.99,
+    "description": "A hearty 1/2-pound beef patty piled high with all your game day favorites. This masterpiece features crispy bacon, cheddar cheese, jalapeños, and a drizzle of spicy homemade sauce."
+  }, {
+    "name": "The Classic Burger",
+    "price": 10.99,
+    "description": "A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice of cheese. Add bacon or avocado for extra flavor."
+  }, {
+    "name": "Grilled Chicken Club",
+    "price": 10.99,
+    "description": "Grilled chicken breast topped with bacon, Swiss cheese, lettuce, tomato, and mayo on a toasted bun."
+  }, {
+    "name": "Veggie Burger",
+    "price": 11.99,
+    "description": "A delicious plant-based patty grilled and served with lettuce, tomato, onion, and your choice of cheese."
+  }, {
+    "name": "BBQ Pulled Pork Sandwich",
+    "price": 9.99,
+    "description": "Slow-cooked pulled pork tossed in tangy barbecue sauce, topped with coleslaw, and served on a toasted brioche bun."
+  }
+]

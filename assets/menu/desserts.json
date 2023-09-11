@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Molten Lava Cake",
+    "price": 2.99,
+    "description": "A warm chocolate cake with a gooey, molten center, served with vanilla ice cream and drizzled with chocolate sauce."
+  }, {
+    "name": "Cheesecake of the Day",
+    "price": 3.25,
+    "description": "Ask your server for today's featured cheesecake flavor."
+  }, {
+    "name": "Key Lime Pie",
+    "price": 6.99,
+    "description": "A tangy and creamy key lime pie in a graham cracker crust, topped with whipped cream and lime zest."
+  }, {
+    "name": "Chocolate Mousse",
+    "price": 6.49,
+    "description": "Tasty chocolate mousse topped with whipped cream and chocolate shavings."
+  }, {
+    "name": "Peach Cobbler",
+    "price": 7.89,
+    "description": "Sweet, juicy peaches and topped with a golden, flaky crust, sprinkled with cinnamon."
+  }, {
+    "name": "Fruit Platter",
+    "price": 2.99,
+    "description": "An assortment of fresh berries, melon, pineapple, and grapes"
+  }
+]

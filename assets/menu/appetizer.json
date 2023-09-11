@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Buffalo Wings",
+    "price": 4.99,
+    "description": "Tender chicken wings coated in your choice of tangy barbecue, spicy buffalo, or honey mustard glaze. Served with celery sticks and ranch dressing."
+  }, {
+    "name": "Grilled Quesadillas",
+    "price": 3.95,
+    "description": "Flour tortillas filled with melted cheese, grilled veggies, and your choice of seasoned chicken, steak, or shrimp. Served with salsa and sour cream."
+  }, {
+    "name": "Loaded Potato Skins",
+    "price": 1.99,
+    "description": "Crispy potato skins stuffed with cheddar cheese, crispy bacon, and scallions. Served with sour cream for dipping."
+  }, {
+    "name": "Grilled Veggie Platter",
+    "price": 2.50,
+    "description": "A plate of assorted vegetables grilled thoroughly with light seasoning."
+  }, {
+    "name": "Fried Calamari",
+    "price": 3.99,
+    "description": "Fried squid."
+  }
+]
