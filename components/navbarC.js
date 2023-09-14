@@ -37,7 +37,7 @@ class navbarC extends HTMLElement {
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
     <div class="container-fluid">
       <a class="navbar-brand px-3" href="#"> 
-        <img src="assets/logo2.png" width="30" height="30">
+        <img src="assets/logo2.png" width="30" height="30" alt="Game Day Grill">
         Game Day Grill
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
@@ -53,19 +53,16 @@ class navbarC extends HTMLElement {
             <a class="nav-link" href="/menu.html">Menu</a>
           </li>
           <li class="nav-item" id="reservations">
-            <a class="nav-link" href="">Reservations</a>
+            <a class="nav-link" href="/reservation.html">Reservations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="" id="events">Events</a>
+            <a class="nav-link" href="/reviews.html" id="events">Reviews</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="" id="events">Reviews</a>
+            <a class="nav-link" href="/aboutus.html" id="about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="" id="about-us">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" id="about-us">Checkout</a>
+            <a class="nav-link" href="/checkout.html" id="about-us">Checkout</a>
           </li>
         </ul>
       </div>
