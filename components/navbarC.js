@@ -37,8 +37,8 @@ class navbarC extends HTMLElement {
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
     <div class="container-fluid">
       <a class="navbar-brand px-3" href="#"> 
-        <img src="assets/logo.png" width="30" height="37"> <!-- need to get new image -->
-        &nbsp&nbspGameday Grill
+        <img src="assets/logo2.png" width="30" height="30">
+        Game Day Grill
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
         aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,9 @@ class navbarC extends HTMLElement {
           </li>
           <li class="nav-item">
             <a class="nav-link" href="" id="about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" id="about-us">Checkout</a>
           </li>
         </ul>
       </div>
