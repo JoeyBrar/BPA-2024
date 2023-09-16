@@ -12,7 +12,7 @@ class navbarC extends HTMLElement {
     margin-right: 5px;
 }
 
-.nav-pills .nav-item:last-child {
+.nav-pills .nav-item:last-child { 
     margin-right: 0px;
 }
 
