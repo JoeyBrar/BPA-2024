@@ -42,8 +42,8 @@ class navbarC extends HTMLElement {
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
   <div class="container-fluid">
     <a class="navbar-brand px-3" href="#"> 
-      <img src="assets/logo2.png" width="30" height="30" alt="Random Thingy">
-      Random Thingy
+      <img src="assets/logo2.png" width="30" height="30" alt="Game Day Grill">
+      Game Day Grill
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
       aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
