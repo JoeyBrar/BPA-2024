@@ -23,7 +23,3 @@
 .nav-pills .nav-item .nav-link:not(active) {
     color: #000000; 
 }
-
-body {
-    background-color: #000000;
-}

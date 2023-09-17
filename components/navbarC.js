@@ -61,9 +61,6 @@ class navbarC extends HTMLElement {
           <a class="nav-link" href="/reservation.html" id="reservations">Reservations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/reviews.html" id="reviews">Reviews</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="/aboutus.html" id="about-us">About Us</a>
         </li>
         <li class="nav-item">
