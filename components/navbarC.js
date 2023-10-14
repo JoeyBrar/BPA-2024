@@ -41,7 +41,7 @@ class navbarC extends HTMLElement {
 </style>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
   <div class="container-fluid">
-    <a class="navbar-brand px-3" href="#"> 
+    <a class="navbar-brand px-3" href="/index.html"> 
       <img src="assets/logo2.png" width="30" height="30" alt="Game Day Grill">
       Game Day Grill
     </a>
