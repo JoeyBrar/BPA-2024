@@ -5,10 +5,7 @@ class navbarC extends HTMLElement {
   connectedCallback(){
     this.render()
     const page = this.getAttribute('page');
-    console.log(page) //Returns "home"
-    console.log(typeof page) //Returns "string"
     const change=this.ownerDocument.getElementById(page).classList.add("active");
-    console.log(change)
   }
   render(){
     this.innerHTML=`

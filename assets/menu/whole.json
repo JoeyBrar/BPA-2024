@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Buffalo Wings",
+    "price": 4.99,
+    "description": "Tender chicken wings coated in your choice of tangy barbecue, spicy buffalo, or honey mustard glaze. Served with celery sticks and ranch dressing."
+  }, {
+    "name": "Grilled Quesadillas",
+    "price": 3.95,
+    "description": "Flour tortillas filled with melted cheese, grilled veggies, and your choice of seasoned chicken, steak, or shrimp. Served with salsa and sour cream."
+  }, {
+    "name": "Loaded Potato Skins",
+    "price": 1.99,
+    "description": "Crispy potato skins stuffed with cheddar cheese, crispy bacon, and scallions. Served with sour cream for dipping."
+  }, {
+    "name": "Grilled Veggie Platter",
+    "price": 2.50,
+    "description": "A plate of assorted vegetables grilled thoroughly with light seasoning."
+  }, {
+    "name": "Fried Calamari",
+    "price": 3.99,
+    "description": "Fried squid."
+  },   {
+    "name": "Signature Gameday Burger",
+    "price": 13.99,
+    "description": "A hearty 1/2-pound beef patty piled high with all your game day favorites. This masterpiece features crispy bacon, cheddar cheese, jalapeños, and a drizzle of spicy homemade sauce."
+  }, {
+    "name": "The Classic Burger",
+    "price": 10.99,
+    "description": "A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice of cheese. Add bacon or avocado for extra flavor."
+  }, {
+    "name": "Grilled Chicken Club",
+    "price": 10.99,
+    "description": "Grilled chicken breast topped with bacon, Swiss cheese, lettuce, tomato, and mayo on a toasted bun."
+  }, {
+    "name": "Veggie Burger",
+    "price": 11.99,
+    "description": "A delicious plant-based patty grilled and served with lettuce, tomato, onion, and your choice of cheese."
+  }, {
+    "name": "BBQ Pulled Pork Sandwich",
+    "price": 9.99,
+    "description": "Slow-cooked pulled pork tossed in tangy barbecue sauce, topped with coleslaw, and served on a toasted brioche bun."
+  }, {
+    "name": "Molten Lava Cake",
+    "price": 2.99,
+    "description": "A warm chocolate cake with a gooey, molten center, served with vanilla ice cream and drizzled with chocolate sauce."
+  }, {
+    "name": "Cheesecake of the Day",
+    "price": 3.25,
+    "description": "Ask your server for today's featured cheesecake flavor."
+  }, {
+    "name": "Key Lime Pie",
+    "price": 6.99,
+    "description": "A tangy and creamy key lime pie in a graham cracker crust, topped with whipped cream and lime zest."
+  }, {
+    "name": "Chocolate Mousse",
+    "price": 6.49,
+    "description": "Tasty chocolate mousse topped with whipped cream and chocolate shavings."
+  }, {
+    "name": "Peach Cobbler",
+    "price": 7.89,
+    "description": "Sweet, juicy peaches and topped with a golden, flaky crust, sprinkled with cinnamon."
+  }, {
+    "name": "Fruit Platter",
+    "price": 2.99,
+    "description": "An assortment of fresh berries, melon, pineapple, and grapes"
+  }, {
+    "name": "New York Strip Steak",
+    "price": 13.86,
+    "description": "A succulent 12-ounce USDA Choice strip steak cooked to your liking and served with your choice of side."
+  }, {
+    "name": "Grilled Salmon",
+    "price": 12.50,
+    "description": "Fresh Atlantic salmon fillet seasoned and grilled to perfection, drizzled with lemon herb butter, and served with your choice of side."
+  }, {
+    "name": "Barbecue Ribs",
+    "price": 11.95,
+    "description": "St. Louis-style ribs slow-smoked and basted with our signature barbecue sauce. Served with coleslaw and cornbread."
+  }, {
+    "name": "Grilled Shrimp Skewers",
+    "price": 14.99,
+    "description": "Jumbo shrimp skewers marinated in garlic and herbs, grilled to perfection, and served with rice pilaf and grilled vegetables."
+  }, {
+    "name": "Lobster Tail",
+    "price": 17.99,
+    "description": "Sizzling, succulent lobster meat grilled to perfection, seasoned lightly with a garlic and lemon drizzle."
+  }, {
+    "name": "Classic Caesar Salad",
+    "price": 3.85,
+    "description": "Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing."
+  }, {
+    "name": "Southwest Steak Salad",
+    "price": 5.98,
+    "description": "Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty chipotle ranch dressing."
+  }, {
+    "name": "Chicken Salad",
+    "price": 4.79,
+    "description": "Shredded chicken, garden lettuce, cranberries, and accompanied by a variety of dressing flavors."
+  }, {
+    "name": "Garlic Parmesan Fries",
+    "price": 5.25,
+    "description": "Crispy fries tossed in garlic and Parmesan cheese."
+  }, {
+    "name": "Loaded Baked Potato",
+    "price": 3.99,
+    "description": "A baked potato topped with butter, sour cream, cheddar cheese, and bacon bits."
+  }, {
+    "name": "French Fries",
+    "price": 4.99,
+    "description": "Crispy, fried, and salted fries served warm with your meal."
+  }, {
+    "name": "Tomato Soup",
+    "price": 3.85,
+    "description": "Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing."
+  }, {
+    "name": "Southwest Steak Salad",
+    "price": 5.98,
+    "description": "Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty chipotle ranch dressing."
+  }, {
+    "name": "Chicken Salad",
+    "price": 4.79,
+    "description": "Shredded chicken, garden lettuce, cranberries, and accompanied by a variety of dressing flavors."
+  }
+]
