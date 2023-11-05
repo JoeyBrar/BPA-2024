@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Day Grill</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-  </head>
-  <body>
-    <navbar-c page="menu"></navbar-c>
-    <script src="/components/navbarC.js"></script>
-    <section height="300px"></section>
-    <h1>Hello</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Day Grill</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+  <navbar-c page="menu"></navbar-c>
+  <script src="/components/navbarC.js"></script>
+  
+  <section height="300px"></section>
+  <h1>Hello</h1>
+
+  <menu-c></menu-c>
+  <script src="/components/menuC.js"></script>
+  <script>
+    function notify() {
+      let toastContent = document.createElement("div");
+      let toast = document.getElementById("toast");
+      toastContent.classList.add("toastContent");
+      toastContent.innerHTML=`<h3>Successfully Added to Cart!</h3>`;
+      toast.appendChild(toastContent);
+
+      setTimeout(() => {
+        toast.removeChild(toastContent);
+      }, 3000);
+    }
+
+    window.onload = function() {
+      // document.getElementById("appetizer").classList.add("active");
+    }     
+  </script>
+
     <footer-c></footer-c>
     <script src="/components/footerC.js"></script>
-    <menu-c></menu-c>
-    <script src="/components/menuC.js"></script>
-  
-  </body>
 
-</html>     
+</body>
+</html>

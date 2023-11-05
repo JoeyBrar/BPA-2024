@@ -23,3 +23,13 @@
 .nav-pills .nav-item .nav-link:not(active) {
     color: #000000; 
 }
+
+.menu-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.menu, .active-menu {
+    color: hotpink;
+}
