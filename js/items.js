@@ -11,7 +11,7 @@ function printAll () {
 async function finalPrice () {
   a = await salesTax();
   b = await grabTotal();
-  return a+b;
+  return Number(a)+Number(b);
 }
 
 
@@ -19,6 +19,7 @@ async function salesTax () {
   out = await grabTotal()*0.06;
   return Number(out.toFixed(2));
 }
+
 
 async function grabTotal () {
   var keyValuePairs = document.cookie.split(';');
@@ -53,7 +54,6 @@ async function grabOneItemPrice (name) {
     let obj = items[i];
     let qty = await grabQuantity(name);
     if (obj.name == name) {
-      console.log("OIJOISJFDOISJDFOIJ")
       return Number(obj.price*qty);
     }
   }
@@ -108,9 +108,3 @@ makeElement ("The Classic Burger", 3)
 makeElement("Buffalo Wings", 2)
 editElement ("Grilled Chicken Club", 6)
 deleteElement("The Classic Burger")
-console.log(grabPrice("Grilled Chicken Club"), "qty: 1")
-console.log(grabOneItemPrice("Grilled Chicken Club"), "qty: 6")
-console.log("#1")
-console.log(grabTotal(), "total price")
-console.log(salesTax(), "tax @ 6%")
-console.log(finalPrice(),"final price")
