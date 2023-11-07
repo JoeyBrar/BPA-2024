@@ -20,24 +20,17 @@
           <span class="badge badge-secondary badge-pill">3</span>
         </h4>
         <ul class="list-group mb-3">
-          <checkout-item-c name="lol" price="35.45" qty="3"></checkout-item-c>
-          <checkout-item-c name="lol" price="35.45" qty="3"></checkout-item-c>
+          <div id="insert-items"></div>
           <script src="/components/checkoutitemC.js"></script>
           <li class="list-group-item d-flex justify-content-between bg-light">
             <div class="">
               <h6 class="my-0">Sales Tax</h6>
             </div>
-            <span class="">$5</span>
+            <span><p id="sales-tax"></p></span>
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
             <strong><p id="total-price"></p></strong>
-            <script defer>
-            console.log(finalPrice(), "html print");
-            totalVal = finalPrice()
-            console.log(totalVal, "osajdfoisdjf")
-            document.getElementById("total-price").innerHTML=`$${totalVal}`
-            </script>
           </li>
         </ul>
 
@@ -154,6 +147,6 @@
     </div>
     <footer-c></footer-c>
     <script src="/components/footerC.js"></script>
-    <script src="/js/items.js"></script>
+    <script src="/js/items.js" defer></script>
   </body>
 </html>     
