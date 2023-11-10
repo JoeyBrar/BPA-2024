@@ -2,52 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Gameday Grill Test Document</title>
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-      <script type="text/javascript" src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Day Grill</title>
+    <meta name="description" content="Game Day Grill -- the ultimate haven for food enthusiasts and sports lovers alike.">
+    <meta name="keywords" content="Grill, Bar, Food, Resturant">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
   </head>
-    <body>
-      <h1>This is the Testing Document</h1>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <navbar-c></navbar-c>
-      <script src="/components/navbarC.js"></script>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="container align-items-center">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary text-center justify-content-center mx-auto">© 2023 Game Day Grill, Inc</p>
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img src="/assets/logo.png" alt="Game Day Grill" style="max-width:50%">
-          </a>
-          <ul class="nav col-md-4 justify-content-center align-items-center text-center mx-auto">
-            <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary text-center text-sm-start">Home</a></li>
-            <li class="nav-item"><a href="/menu.html" class="nav-link px-2 text-body-secondary text-center text-sm-start">Menu</a></li>
-            <li class="nav-item"><a href="/reservation.html" class="nav-link px-2 text-body-secondary text-center text-sm-start">Reservations</a></li>
-            <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-body-secondary text-center text-sm-start">About Us</a></li>
-            <li class="nav-item"><a href="/checkout.html" class="nav-link px-2 text-body-secondary text-center text-sm-start">Checkout</a></li>
-          </ul>
-        </footer>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <footer-c></footer-c>
-      <script src="/components/footerC.js"></script>
-    </body>
-</html>
+  <body>
+    <navbar-c page="checkout"></navbar-c>
+    <script src="/components/navbarC.js"></script>
+    <section height="300px"></section>
+    <section class="pt-5 pb-5"> 
+      <div class="container">
+        <div class="row w-100">
+            <div class="col-lg-12 col-md-12 col-12">
+                <h3 class="display-5 mb-2 text-center">Shopping Cart</h3>
+                <table id="shoppingCart" class="table table-condensed table-responsive">
+                    <thead>
+                        <tr>
+                            <th style="width:60%">Product</th>
+                            <th style="width:12%">Price</th>
+                            <th style="width:10%">Quantity</th>
+                            <th style="width:16%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Product">
+                                <div class="row">
+                                    <div class="col-md-12 text-left mt-sm-2">
+                                        <h4>Classic Chicken Sandwich</h4>
+                                        <p class="font-weight-light">Brand &amp; Name</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle" data-th="Price">$49.00</td>
+                            <td class="align-middle" data-th="Quantity">
+                                <input type="number" class="form-control form-control-lg text-center align-middle" value="1" min="1">
+                            </td>
+                            <td class="actions align-middle" data-th="">
+                                <div class="text-right">
+                                  <button type="button" class="btn-close align-middle" aria-label="Close"></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td data-th="Product">
+                              <div class="row">
+                                
+                                  <div class="col-md-12 text-left mt-sm-2">
+                                      <h4>Classic Chicken Sandwich</h4>
+                                      <p class="font-weight-light">Brand &amp; Name</p>
+                                  </div>
+                              </div>
+                          </td>
+                          <td class="align-middle" data-th="Price">$49.00</td>
+                          <td class="align-middle" data-th="Quantity">
+                              <input type="number" class="form-control form-control-lg text-center align-middle" value="1" min="1">
+                          </td>
+                          <td class="actions align-middle" data-th="">
+                              <div class="text-right">
+                                <button type="button" style="color: cornflowerblue;" class="btn-close align-middle" aria-label="Close"></button>
+                              </div>
+                          </td>
+                      </tr><tr>
+                        <td data-th="Product">
+                            <div class="row">
+                              
+                                <div class="col-md-12 text-left mt-sm-2">
+                                    <h4>Classic Chicken Sandwich</h4>
+                                    <p class="font-weight-light">Brand &amp; Name</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="align-middle" data-th="Price">$49.00</td>
+                        <td class="align-middle" data-th="Quantity">
+                            <input type="number" class="form-control form-control-lg text-center align-middle" value="1" min="1">
+                        </td>
+                        <td class="actions align-middle" data-th="">
+                            <div class="text-right">
+                              <button type="button" class="btn-close align-middle" aria-label="Close"></button>
+                            </div>
+                        </td>
+                    </tr><tr>
+                      <td data-th="Product">
+                          <div class="row">
+                            
+                              <div class="col-md-12 text-left mt-sm-2">
+                                  <h4>Classic Chicken Sandwich</h4>
+                                  <p class="font-weight-light">Brand &amp; Name</p>
+                              </div>
+                          </div>
+                      </td>
+                      <td class="align-middle" data-th="Price">$49.00</td>
+                      <td class="align-middle" data-th="Quantity">
+                          <input type="number" class="form-control form-control-lg text-center align-middle" value="1" min="1">
+                      </td>
+                      <td class="actions align-middle" data-th="">
+                          <div class="text-right">
+                            <button type="button" class="btn-close align-middle" aria-label="Close"></button>
+                          </div>
+                      </td>
+                  </tr>
+                    </tbody>
+                </table>
+                <div class="float-right text-right">
+                    <h4>Subtotal:</h4>
+                    <h1>$99.00</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 d-flex align-items-center">
+            <div class="col-sm-6 order-md-2 text-right">
+                <a href="catalog.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5">Checkout</a>
+            </div>
+            <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                <a href="catalog.html">
+                    <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer-c></footer-c>
+    <script src="/components/footerC.js"></script>
+  </body>
+</html>     

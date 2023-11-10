@@ -5,10 +5,7 @@ class navbarC extends HTMLElement {
   connectedCallback(){
     this.render()
     const page = this.getAttribute('page');
-    console.log(page) //Returns "home"
-    console.log(typeof page) //Returns "string"
     const change=this.ownerDocument.getElementById(page).classList.add("active");
-    console.log(change)
   }
   render(){
     this.innerHTML=`
@@ -41,7 +38,7 @@ class navbarC extends HTMLElement {
 </style>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
   <div class="container-fluid">
-    <a class="navbar-brand px-3" href="#"> 
+    <a class="navbar-brand px-3" href="/index.html"> 
       <img src="assets/logo2.png" width="30" height="30" alt="Game Day Grill">
       Game Day Grill
     </a>

@@ -3,16 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game Day Grill -- the ultimate haven for food enthusiasts and sports lovers alike.">
+    <meta name="keywords" content="Grill, Bar, Food, Resturant">
     <title>Game Day Grill</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js" defer></script>
   </head>
   <body>
-    <navbar-c></navbar-c>
+    <navbar-c page="reservations"></navbar-c>
     <script src="/components/navbarC.js"></script>
     <section height="300px"></section>
-    <h1>Hello</h1>
+    <div class="py-5 text-center">
+      <h3 class="display-5 mb-2 text-center">Reservations</h3>
+      <h3 class=" mb-2 text-center">Book your Table</h3>
+    </div>
+    <div class="row w-75 mx-auto justify-content-center border border-danger rounded border-2 p-5">
+      <div class="col gx-5">
+        <div class="row">
+          <p>First Name</p>
+          <input class="form-control" placeholder="First">
+        </div>
+        <br>
+        <div class="row">
+          <p>Date</p>
+          <input type="date" class="form-control" placeholder="Date">
+        </div>
+        <br>
+        <div class="row">
+          <p>Party Size</p>
+          <input type="number" class="form-control" min="1" max="30" placeholder="1">
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <p>First Name</p>
+          <input class="form-control" placeholder="First">
+        </div>
+        <br>
+        <div class="row">
+          <p>Time</p>
+          <input type="time" class="form-control" placeholder="Time">
+        </div>
+        <br>
+        <div class="row">
+          <p>Phone Number</p>
+          <input type="tel" class="form-control" placeholder="Phone">
+        </div>
+      </div>
+      <div class="row pt-5">
+        <a class="btn btn-danger" href="index.html" role="button">Send</a>
+      </div>
+    </div>
     <footer-c></footer-c>
     <script src="/components/footerC.js"></script>
   </body>
