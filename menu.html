@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Day Grill</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="/js/menuAdd.js"></script>
 </head>
-
 <body>
   <navbar-c page="menu"></navbar-c>
   <script src="/components/navbarC.js"></script>
-
-  <section height="300px"></section>
-  <h1>Hero Page Goes Here</h1>
-
+  <div class="py-5 text-center">
+    <h3 class="display-5 mb-2 text-center">Menu</h3>
+  </div>
   <div class="container">
-    <h2>Our Menu</h2>
-    <p>Our Menu consists of the best appetizers, drinks and food in the world. </p>
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs justify-content-center">
       <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#appetizer">Appetizers</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#salads">Salads</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#soups">Soups</a></li>
@@ -28,19 +24,18 @@
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sides">Sides</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#deserts">Deserts</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#beverages">Beverages</a></li>
-    </ul><br>
+    </ul>
+    <br>
 
     <div class="tab-content">
       <div id="appetizer" class="tab-pane fade show active">
-        <h3>Appetizers</h3>
-        <p>We have a large variety of appetizers handcrafted by some of the worlds best chefs.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Buffalo Wings</h5>
             <p>Tender chicken wings coated in your choice of tangy barbecue,
               spicy buffalo,
               or honey mustard glaze. Served with celery sticks and ranch dressing <b>$4.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Buffalo Wings')">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Grilled Quesadillas</h5>
@@ -49,14 +44,14 @@
               and your choice of seasoned chicken,
               steak,
               or shrimp. Served with salsa and sour cream <b>$3.95</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Quesadillas')">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Loaded Potato Skins</h5>
             <p>Crispy potato skins stuffed with cheddar cheese,
               crispy bacon,
               and scallions. Served with sour cream for dipping <b>$1.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Potato Skins')">+</button>
           </div>
         </div><br>
         <div class="row">
@@ -65,7 +60,7 @@
             <p>A plate of assorted vegetables grilled thoroughly with light seasoning
               <b>$2.50</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Veggie Platter')">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Fried Calamari</h5>
@@ -73,26 +68,24 @@
               <b>$3.99</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fried Calamari')">+</button>
           </div>
         </div>
       </div>
 
       <div id="salads" class="tab-pane fade">
-        <h3>Salads</h3>
-        <p>Ceaser's personal favorite.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Classic Caesar Salad</h5>
             <p>Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing. <b>$3.85</b></p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Southwest Steak Salad</h5>
             <p>Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty
               chipotle ranch dressing. <b>$5.98</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Chicken Salad</h5>
@@ -100,59 +93,55 @@
               <b>$4.79</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
         </div>
       </div>
 
       <div id="soups" class="tab-pane fade">
-        <h3>Soups</h3>
-        <p>Hot n Ready.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Tomato Soup</h5>
             <p>Velvety soup with cherry tomato and fresh basil. <b>$3.99</b></p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>French Onion Soup</h5>
             <p>Slow-cooked soup offering flavors of caramelized onion and a savory, cheesy broth. <b>$5.25</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Seafood Chowder</h5>
             <p>A blend of succulent crab, shrimp, and tender white fish, served as a creamy, steaming chowder.
               <b>$6.79</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
         </div><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Chicken Noodle</h5>
             <p>A warm blend of chicken and flavourful broth. <b>$3.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
         </div>
       </div>
 
       <div id="burgers" class="tab-pane fade">
-        <h3>Burgers & Sandwiches</h3>
-        <p>The biggest burgers you could ever imagine.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Signature Gameday Burger</h5>
             <p>A hearty 1/2-pound beef patty piled high with all your game day favorites. This masterpiece features
               crispy bacon, cheddar cheese, jalapeños, and a drizzle of spicy homemade sauce. <b>$13.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>The Classic Burger</h5>
             <p>A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice
               of cheese. Add bacon or avocado for extra flavor. <b>$10.99</b></p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Grilled Chicken Club</h5>
@@ -161,7 +150,7 @@
             </p>
             <br>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
         </div><br>
         <div class="row">
@@ -171,7 +160,7 @@
               <b>$11.99</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
           <div class="col-sm-4">
             <h5>BBQ Pulled Pork Sandwich</h5>
@@ -179,14 +168,12 @@
               brioche bun.
               <b>$9.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="notify()">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="">+</button>
           </div>
         </div>
       </div>
 
       <div id="grilled" class="tab-pane fade">
-        <h3>From the Grill</h3>
-        <p>Burnt to perfection.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>New York Strip Steak</h5>
@@ -234,8 +221,6 @@
       </div>
 
       <div id="sides" class="tab-pane fade">
-        <h3>Sides</h3>
-        <p>This will make a fine addition to my meal.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Garlic Parmesan Fries</h5>
@@ -263,8 +248,6 @@
       </div>
 
       <div id="deserts" class="tab-pane fade">
-        <h3>Deserts</h3>
-        <p>A nice way to end the meal.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Molten Lava Cake</h5>
@@ -315,8 +298,6 @@
       </div>
 
       <div id="beverages" class="tab-pane fade">
-        <h3>Beverages</h3>
-        <p>Sweet, cold drinks for a hot day.</p><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Soft Drinks</h5>

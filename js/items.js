@@ -104,12 +104,6 @@ function makeElement (name, quantity) {
   curNum+=1
 }
 
-makeElement ("Grilled Chicken Club", 3)
-makeElement ("The Classic Burger", 3)
-makeElement("Buffalo Wings", 2)
-editElement ("Grilled Chicken Club", 6)
-deleteElement("The Classic Burger")
-
 async function inputFinalPrice() {
   let finalTotal = await finalPrice()
   document.getElementById("total-price").innerHTML=`$${finalTotal}`
