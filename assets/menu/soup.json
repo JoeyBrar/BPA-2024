@@ -1,15 +1,19 @@
 [
   {
     "name": "Tomato Soup",
-    "price": 3.85,
-    "description": "Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing."
+    "price": 3.99,
+    "description": "Velvety soup with cherry tomato and fresh basil."
   }, {
-    "name": "Southwest Steak Salad",
-    "price": 5.98,
-    "description": "Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty chipotle ranch dressing."
+    "name": "French Onion Soup",
+    "price": 5.25,
+    "description": "Slow-cooked soup offering flavors of caramelized onion and a savory, cheesy broth."
   }, {
-    "name": "Chicken Salad",
-    "price": 4.79,
-    "description": "Shredded chicken, garden lettuce, cranberries, and accompanied by a variety of dressing flavors."
+    "name": "Seafood Chowder",
+    "price": 6.79,
+    "description": "A blend of succulent crab, shrimp, and tender white fish, served as a creamy, steaming chowder."
+  }, {
+    "name": "Chicken Noodle",
+    "price": 3.99,
+    "description": "A warm blend of chicken and flavourful broth."
   }
 ]

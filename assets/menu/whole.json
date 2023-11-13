@@ -109,15 +109,35 @@
     "description": "Crispy, fried, and salted fries served warm with your meal."
   }, {
     "name": "Tomato Soup",
-    "price": 3.85,
-    "description": "Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing."
+    "price": 3.99,
+    "description": "Velvety soup with cherry tomato and fresh basil."
   }, {
-    "name": "Southwest Steak Salad",
-    "price": 5.98,
-    "description": "Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty chipotle ranch dressing."
+    "name": "French Onion Soup",
+    "price": 5.25,
+    "description": "Slow-cooked soup offering flavors of caramelized onion and a savory, cheesy broth."
   }, {
-    "name": "Chicken Salad",
-    "price": 4.79,
-    "description": "Shredded chicken, garden lettuce, cranberries, and accompanied by a variety of dressing flavors."
+    "name": "Seafood Chowder",
+    "price": 6.79,
+    "description": "A blend of succulent crab, shrimp, and tender white fish, served as a creamy, steaming chowder."
+  }, {
+    "name": "Chicken Noodle",
+    "price": 3.99,
+    "description": "A warm blend of chicken and flavourful broth."
+  }, {
+    "name": "Soft Drinks",
+    "price": 2.49,
+    "description": "Choose from a variety of refreshing soft drinks, including classics like cola, lemon-lime soda, and root beer, served with plenty of ice. Free refills are included!"
+  }, {
+    "name": "Coffee",
+    "price": 2.99,
+    "description": "Enjoy a freshly brewed cup of aromatic coffee made from our special blend of beans. Whether you prefer it black, with cream, or sweetened, our coffee is the perfect way to wrap up your meal."
+  }, {
+    "name": "Iced Tea",
+    "price": 2.99,
+    "description": "Cool off with a glass of our house-brewed iced tea, available in sweetened and unsweetened varieties. Garnished with a lemon slice, it's a classic choice for a refreshing beverage."
+  }, {
+    "name": "Fruit Juice",
+    "price": 3.49,
+    "description": "Quench your thirst with a selection of 100% pure fruit juices. Choose from options like orange, cranberry, or pineapple to enjoy a burst of natural fruit flavors with your meal."
   }
 ]

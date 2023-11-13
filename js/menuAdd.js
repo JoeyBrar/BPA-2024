@@ -1,9 +1,12 @@
-var alterID=1
+var alterID = localStorage.getItem('alterID') || 1;
+if (alterID == 1) {
+  localStorage.setItem('alterID', 1)
+}
 function incrementFood (name) {
   var keyValuePairs = document.cookie.split(';');
   var alterQty = null;
   var alterName="";
-  var insidealterID = ""
+  let x = localStorage.getItem("alterID");
   for(var i = 0; i < keyValuePairs.length; i++) {
     console.log(name, i)
     var c1 = keyValuePairs[i].substring(0, keyValuePairs[i].indexOf('=')).trim();
@@ -18,10 +21,11 @@ function incrementFood (name) {
     }
   }
   if (alterName == "") {
-    document.cookie = `item${alterID}=${name}+${1}`;
+    document.cookie = `item${x}=${name}+${1}`;
   } else {
-    document.cookie = `${insidealterIDalterID}=${alterName}+${cQty+1}`;
+    document.cookie = `${c1}=${alterName}+${cQty+1}`;
   }
-  console.log(alterID)
+  localStorage.setItem('alterID', Number(x)+1)
   alterID+=1;
 }
+

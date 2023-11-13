@@ -4,14 +4,6 @@
     "price": 2.49,
     "description": "Choose from a variety of refreshing soft drinks, including classics like cola, lemon-lime soda, and root beer, served with plenty of ice. Free refills are included!"
   }, {
-    "name": "A selection of Craft Beers and Wines",
-    "price": 0.00,
-    "description": "Explore our curated selection of craft beers and wines to complement your meal. From hoppy IPAs to rich red wines, there's a beverage to satisfy every palate. Ask your server for our current offerings."
-  }, {
-    "name": "Specialty Cocktails",
-    "price": 0.00,
-    "description": "Our talented mixologists craft a range of creative and delicious cocktails. From fruity and tropical to bold and smoky, our specialty cocktails are made with premium spirits and fresh ingredients. Check our drink menu for the latest concoctions."
-  }, {
     "name": "Coffee",
     "price": 2.99,
     "description": "Enjoy a freshly brewed cup of aromatic coffee made from our special blend of beans. Whether you prefer it black, with cream, or sweetened, our coffee is the perfect way to wrap up your meal."
