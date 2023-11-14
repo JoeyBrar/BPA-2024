@@ -13,10 +13,30 @@
     <navbar-c page="reservations"></navbar-c>
     <script src="/components/navbarC.js"></script>
     <section height="300px"></section>
-    <div class="py-5 text-center">
-      <h3 class="display-5 mb-2 text-center">Reservations</h3>
-      <h3 class=" mb-2 text-center">Book your Table</h3>
-    </div>
+    <style>
+      .hero-container {
+        position: relative;
+        background: url('assets/reg-imgs/reservation-1.png') center/cover no-repeat; 
+        height: 80vh;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+    <header class="hero-container">
+      <div class="overlay rounded py-1">
+        <h1 class="display-2">Reservations</h1>
+        <h3>Book your Table</h3>
+      </div>
+    </header>
+    <section class="py-5"></section>
     <div class="row w-75 mx-auto justify-content-center border border-danger rounded border-2 p-5">
       <div class="col gx-5">
         <div class="row">

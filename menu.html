@@ -11,11 +11,30 @@
 <body>
   <navbar-c page="menu"></navbar-c>
   <script src="/components/navbarC.js"></script>
-  <div class="py-5 text-center">
-    <h3 class="display-5 mb-2 text-center">Menu</h3>
-    <section class="py-1"></section>
-    <a class="btn btn-danger justify-content-center" target="_blank" href="assets\menu\GDG_Menu.pdf">Download our Menu</a>
-  </div>
+  <style>
+    .hero-container {
+      position: relative;
+      background: url('/assets/reg-imgs/pexels-omar-mahmood-106343.jpg') center/cover no-repeat; 
+      height: 80vh;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+  <header class="hero-container">
+    <div class="overlay rounded py-1">
+      <h1 class="display-2">Menu</h1>
+      <a class="btn btn-danger justify-content-center" target="_blank" href="assets\menu\GDG_Menu.pdf">Download our Menu</a>
+    </div>
+  </header>
+  <section class="py-5"></section>
   <div class="container">
     <ul class="nav nav-tabs justify-content-center">
       <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#appetizer">Appetizers</a></li>
