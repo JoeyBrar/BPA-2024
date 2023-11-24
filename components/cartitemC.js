@@ -4,7 +4,19 @@ class cartitemC extends HTMLElement {
   }
   connectedCallback(){
     this.render();
-  }
+/*
+    const itemName = this.getAttribute('name');
+    this.querySelector("#nameX").innerHTML=`${itemName}`;
+
+    const qty = this.getAttribute('qty');
+    this.querySelector("#qtyX").innerHTML=`Qty: ${qty}`;
+
+    const priceO = this.getAttribute('price');
+    this.querySelector("#priceX").innerHTML=`$${Math.abs(parseFloat(this.getAttribute('price')) * parseFloat( this.getAttribute('qty') ) ).toFixed(2)}`;
+    
+    const priceW = this.getAttribute('price');
+    this.querySelector("#priceX").innerHTML=`$${Math.abs(parseFloat(this.getAttribute('price')) * parseFloat( this.getAttribute('qty') ) ).toFixed(2)}`;
+*/ }
   render(){
     this.innerHTML=`
 <tr>
