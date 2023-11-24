@@ -9,127 +9,190 @@
     <meta name="author" content="2023-24 Huron BPA WSDT">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" defer>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons-1.11.2/font/bootstrap-icons.css">
     <script type="text/javascript" src="js/bootstrap.js" defer></script>
     <script type="text/javascript" src="js/index.js" defer></script>
+    <link rel="preload" href="/assets/reg-imgs/GameDayGrillLocation.webp" as="image" type="image/webp" crossorigin>
   </head>
   <body>
     <navbar-c page="home"></navbar-c>
     <script src="/components/navbarC.js"></script>
-    <div class="px-4 pt-5 my-2 text-center border-bottom">
-      <h1 class="display-4 fw-bold">Game Day Grill</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Indulge in the ultimate culinary adventure where savory flavors meet adrenaline-pumping sports excitement. At Game Day Grill, each bite is a winning touchdown.
+    
+    <style>
+      .red-text {
+        color: #e92121;
+      }
 
-        </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-danger btn-lg px-4 me-sm-3">Order Now</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Make  Reservation</button>
+      .hero {
+        background: url(/assets/reg-imgs/emerson-vieira-cpkPJ-U9eUM-unsplash.webp) center/cover no-repeat;
+      }
+
+      .big-text  {
+        color: #e92121;
+      }
+
+      #mymap{
+        background: url(/assets/reg-imgs/GameDayGrillLocation.webp); 
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        padding-top: 76.25%;
+    }
+    #mymap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+      
+    </style>
+    
+    <section class="hero py-5 bg-dark mb-5">
+      <div class="container my-5 py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-1 red-text fw-bold">Game Day</h1>
+            <h1 class="display-1 text-white fw-bold">Grill</b></h1>
+            <p class="mb-4 pb-2 text-white fw-light">Indulge in the ultimate culinary adventure where savory flavors meet adrenaline-pumping sports excitement. At Game Day Grill, each bite is a winning touchdown.</p>
+            <button type="button" class="btn btn-danger btn-lg px-4 py-1">Order Now</button>
+            <button type="button" class="btn btn-secondary btn-lg px-4 py-1 m-3">Make  Reservation</button>
+          </div>
         </div>
       </div>
-      <div class="overflow-hidden" style="max-height: 30vh;">
-        <div class="container px-5">
-          <img src="/assets/reg-imgs/pexels-rdne-stock-project-5779787-edit2.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Game Day Grill" width="700" height="500" loading="lazy">
-        </div>
-      </div>
-    </div>
+    </section>
+
     <section class="py-4"></section>
-    <div class="container-fluid w-75">
+    <div class="container">
       <div class="row">
         <div class="col-md-6 col-xs-12 text-center d-flex align-items-center">
-          <div class="row">
-            <p class="fs-1">Game Day Grill<br><p class="fs-6">Welcome! Our all-famous Game-Day Grill is back, celebrating flavor and fun anew. Located at the heart of Funland, Michigan, our restaurant is a haven for food enthusiasts and sports aficionados alike. Whether you're joining us to catch the big game on our massive screens or simply looking for a delectable meal, we've got you covered. Dive into our menu filled with mouthwatering dishes inspired by the excitement of game day, from hearty burgers and sizzling wings to refreshing salads and flavorful vegetarian options. At Game-Day Grill, we believe that good times and great food go hand in hand. Join us on this unforgettable culinary journey that’ll surely transcend your tastebuds.</p></p>
+          <div class="row mb-4">
+            <h1 class="mb-4">We're glad you're here.</h1>
+            <p class="mb-4">Welcome! Our all-famous Game-Day Grill is back, celebrating flavor and fun anew. Located at the heart of Ann Arbor, Michigan, our restaurant is a haven for food enthusiasts and sports aficionados alike. Whether you're joining us to catch the big game on our massive screens or simply looking for a delectable meal, we've got you covered. Dive into our menu filled with mouthwatering dishes inspired by the excitement of game day, from hearty burgers and sizzling wings to refreshing salads and flavorful vegetarian options. At Game-Day Grill, we believe that good times and great food go hand in hand. Join us on this unforgettable culinary journey that’ll surely transcend your tastebuds.</p> 
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center border-start border-5 border-danger px-3">
+                <h1 class="big-text display-5 mb-0">12+</h1>
+                <div class="ps-4">
+                  <p class="mb-0">Years of</p>
+                  <h6 class="text-uppercase mb-0">Experience</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center border-start border-5 border-danger px-3">
+                <h1 class="big-text display-5 mb-0">4</h1>
+                <div class="ps-4">
+                  <p class="mb-0">Culinary</p>
+                  <h6 class="text-uppercase mb-0">Awards</h6>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-xs-12 text-center d-flex align-items-center">
           <div class="row">
-            <img src="/assets/reg-imgs/pexels-rdne-stock-project-5779787.webp" alt="Game Day Grill">
+            <img src="/assets/reg-imgs/pexels-rdne-stock-project-5779787.jpg" class="rounded" alt="Chef cooking inside the Game Day Grill">
           </div>
         </div>
       </div>
     </div>
+
     <section class="py-4"></section>
-    <div class="bg-opacity-25 py-5" style="background-color: #fff;">
-      <div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto d-flex justify-content-center">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/reg-imgs/pexels-zabdi-onan-caceres-7734563-edit.webp" class="d-block w-100" alt="Game Day Grill">
-            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-25">
-              <h5>"QUALITY SERVICE"</h5>
-              <p>The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <h1 class="text-center">What our Customers Say</h1>
+        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+          <div class="card-body">
+            <div class="col pb-2 py-1">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i> 
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/reg-imgs/pexels-valeria-boltneva-1639565-edit.webp" class="d-block w-100" alt="Game Day Grill">
-            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-25">
-              <h5>"FIVE STARS"</h5>
-              <p>Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/reg-imgs/pexels-ruslan-khmelevsky-11267159-edit.webp" class="d-block w-100" alt="Game Day Grill">
-            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-25">
-              <h5>"FOOD WAS GREAT"</h5>
-              <p>The food served at this restaurant is delicious, palatable and flavorful. The waiters were extremely kind and helpful. If I could give this restaurant 10 stars, I would. </p>
-            </div>
+            <h5 class="card-title">QUALITY SERVICE</h5>
+            <p class="card-text">The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+          <div class="card-body">
+            <div class="col pb-2 py-1">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i> 
+            </div>
+            <h5 class="card-title">FIVE STARS</h5>
+            <p class="card-text">Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
+          </div>
+        </div>
+        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+          <div class="card-body">
+            <div class="col pb-2 py-1">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i> 
+            </div>
+            <h5 class="card-title">FOOD WAS GREAT</h5>
+            <p class="card-text">The food served at this restaurant is delicious, palatable and flavorful. The waiters were extremely kind and helpful. If I could give this restaurant 10 stars, I would.</p>
+          </div>
+        </div>
       </div>
     </div>
+    
     <section class="py-4"></section>
-    <div class="container-fluid w-75">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 col-xs-12 text-center d-flex align-items-center">
-          <div class="row">
-            <h3 class="display">Contact Us</h3>
-            <p>Need to get in touch with us? Want to schedule a special event? Fill out the form with your inquiry.</p>
-          </div>
-        </div>  
+        <div class="col-12">
+          <h1>Get in Touch</h1>
+          <p>Need to contact us? Want to schedule a special event? Fill out the form with your inquiry.</p>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6 col-xs-12">
-          <div class="container py-8 px-4">
-            <form id="contactForm">
-              <div class="mb-3">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="emailAddress">Email Address</label>
-                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-              </div>
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">Form submission successful!</div>
-              </div>
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
-              </div>
-              <div class="d-grid">
-                <button class="btn btn-danger btn-lg" type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
+          <form action="" class="row">
+            <div class="col-6 p-2">
+              <input type="text" class="form-control" placeholder="First" required>
+            </div>
+            <div class="col-6 p-2">
+              <input type="text" class="form-control" placeholder="Last" required>
+            </div>
+            <div class="col-12 p-2">
+              <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="col-12 p-2">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="col-12 p-2">
+              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 14rem;" required></textarea>
+            </div>
+            <div class="col-12 p-2">
+              <button class="btn btn-danger btn-md" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7226.621160459755!2d-83.70703364036592!3d42.28018798204294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae94ae3d7797%3A0x7a73fbb58e79e852!2sHuron%20High%20School!5e0!3m2!1sen!2sus!4v1700784086141!5m2!1sen!2sus" id="mymap"></div>
         </div>
       </div>
     </div>
+
+    <script>
+      var map = document.getElementById ('mymap'); 
+      var maplistner = function (e) { 
+          var frame = document.createElement ('iframe'); 
+          frame.src = this.getAttribute ('data-src'); 
+          map.appendChild (frame); 
+          map.removeEventListener ("mouseover", maplistner); 
+      }; 
+      map.addEventListener ('mouseover', maplistner);     
+    </script>
+
+
     <footer-c></footer-c>
     <script src="/components/footerC.js"></script>
   </body>
