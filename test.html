@@ -8,8 +8,9 @@
     <meta name="keywords" content="Grill, Bar, Food, Resturant">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/cart.js" defer></script>
   </head>
-  <body>
+  <body onload="loopFood()">
     <navbar-c page="checkout"></navbar-c>
     <script src="/components/navbarC.js"></script>
     <section height="300px"></section>
@@ -17,8 +18,8 @@
       <div class="container">
         <div class="row w-100">
             <div class="col-lg-12 col-md-12 col-12">
-                <h3 class="display-5 mb-2 text-center">Shopping Cart</h3>
-                <table id="shoppingCart" class="table table-condensed table-responsive">
+                <h3 class="display-5 m-2 pb-5 text-center">Shopping Cart</h3>
+                <table class="table table-condensed table-responsive">
                     <thead>
                         <tr>
                             <th style="width:60%">Product</th>
@@ -27,31 +28,10 @@
                             <th style="width:16%"></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td data-th="Product">
-                                <div class="row">
-                                    <div class="col-md-12 text-left mt-sm-2">
-                                        <h4>Classic Chicken Sandwich</h4>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle" data-th="Price">$49.00</td>
-                            <td class="align-middle" data-th="Quantity">
-                                <input type="number" class="form-control form-control-lg text-center align-middle" value="1" min="1">
-                            </td>
-                            <td class="actions align-middle" data- th="">
-                                <div class="text-right">
-                                  <button type="button" class="btn-close align-middle" aria-label="Close"></button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tbody  id="shoppingCart"></tbody>
                 </table>
             </div>
         </div>
-        
         <div class="row mt-4 d-flex align-items-center">
             <div class="col-sm-6 order-md-2 text-right">
                 <a href="/cart.html" class="btn btn-secondary mb-4 btn-lg pl-5 pr-5">Update Cart</a>
