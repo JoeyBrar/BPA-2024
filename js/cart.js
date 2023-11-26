@@ -14,7 +14,6 @@ async function loopFood () {
     }
   }
   putTotal()
-  updateCart()
 }
 
 async function insertFoodS(food) {
@@ -39,7 +38,7 @@ async function insertFoodS(food) {
   price.innerHTML = `$${foodPrice}`;
   price.classList.add("align-middle");
   qty.innerHTML = `
-  <input type="number" id="foodQtyC" class="form-control form-control-lg text-center align-middle" value="${foodQty}" min="1">
+  <input type="number" id="foodQtyC" onchange="editVal(this)" class="form-control form-control-lg text-center align-middle" value="${foodQty}" min="1">
   `;
   qty.classList.add("align-middle");
   deleteBtn.innerHTML = `
@@ -48,6 +47,12 @@ async function insertFoodS(food) {
   </div>
   `;
   deleteBtn.classList.add("align-middle");
+}
+
+
+async function editVal (r) {
+  editElement(r.parentNode.parentNode.querySelector("#foodC").innerHTML ,r.value)
+  putTotal()
 }
 
 async function grabTotal () {
@@ -160,23 +165,3 @@ function editElement (name, quantityE) {
   }
   document.cookie = `${cf1}=${name}+${quantityE}`;
 }
-
-async function updateCart () {
-  var table = document.getElementById("shoppingCart");
-  for (var i = 0, row; row = table.rows[i]; i++) {
-    console.log("row",row)
-    //iterate through rows
-    //rows would be accessed using the "row" variable assigned in the for loop
-    for (var j = 0, col; col = row.cells[j]; j++) {
-      if (j=2) {
-        var newQty = document.getElementById('foodQtyC').value
-      }
-      if (j=0) {
-        var newName = document.getElementById('foodC').innerHTML
-      }
-      editElement(newName,newQty)
-    }  
-  }
-}
-
-loopFood()
