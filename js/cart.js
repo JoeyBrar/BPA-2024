@@ -14,6 +14,7 @@ async function loopFood () {
     }
   }
   putTotal()
+  updateCart()
 }
 
 async function insertFoodS(food) {
@@ -38,7 +39,7 @@ async function insertFoodS(food) {
   price.innerHTML = `$${foodPrice}`;
   price.classList.add("align-middle");
   qty.innerHTML = `
-  <input type="number" class="form-control form-control-lg text-center align-middle" value="${foodQty}" min="1">
+  <input type="number" id="foodQtyC" class="form-control form-control-lg text-center align-middle" value="${foodQty}" min="1">
   `;
   qty.classList.add("align-middle");
   deleteBtn.innerHTML = `
@@ -75,22 +76,6 @@ function deleteElement (name) {
       break;
     }
   }
-}
-
-
-
-function editElement (name, quantityE) {
-  var keyValuePairs = document.cookie.split(';');
-  for(var i = 0; i < keyValuePairs.length; i++) {
-    var c1 = keyValuePairs[i].substring(0, keyValuePairs[i].indexOf('=')).trim();
-    var c2 = keyValuePairs[i].substring(keyValuePairs[i].indexOf('=')+1).trim();
-    cs2 = c2.split('+');
-    if (cs2[0]==name) {
-      cf1=c1;
-      break;
-    }
-  }
-  document.cookie = `${cf1}=${name}+${quantityE}`;
 }
 
 async function grabPrice (name) {
@@ -147,7 +132,51 @@ async function putTotal () {
   if (isNaN(total)) {
     document.getElementById('total-price').innerHTML="$0.00";
   } else {
-    document.getElementById('total-price').innerHTML=`$${total}`;
+    document.getElementById('total-price').innerHTML=`$${total.toFixed(2)}`;
   }
-  
 }
+
+function deleteAllCookies() {
+  const cookies = document.cookie.split(";");
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i];
+    const eqPos = cookie.indexOf("=");
+    const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  }
+}
+
+function editElement (name, quantityE) {
+  var keyValuePairs = document.cookie.split(';');
+  var cf1 = ""
+  for(var i = 0; i < keyValuePairs.length; i++) {
+    var c1 = keyValuePairs[i].substring(0, keyValuePairs[i].indexOf('=')).trim();
+    var c2 = keyValuePairs[i].substring(keyValuePairs[i].indexOf('=')+1).trim();
+    cs2 = c2.split('+');
+    if (cs2[0]==name) {
+      cf1=c1;
+      break;
+    }
+  }
+  document.cookie = `${cf1}=${name}+${quantityE}`;
+}
+
+async function updateCart () {
+  var table = document.getElementById("shoppingCart");
+  for (var i = 0, row; row = table.rows[i]; i++) {
+    console.log("row",row)
+    //iterate through rows
+    //rows would be accessed using the "row" variable assigned in the for loop
+    for (var j = 0, col; col = row.cells[j]; j++) {
+      if (j=2) {
+        var newQty = document.getElementById('foodQtyC').value
+      }
+      if (j=0) {
+        var newName = document.getElementById('foodC').innerHTML
+      }
+      editElement(newName,newQty)
+    }  
+  }
+}
+
+loopFood()

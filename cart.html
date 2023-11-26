@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/cart.js" defer></script>
   </head>
-  <body onload="loopFood()">
+  <body>
     <navbar-c page="checkout"></navbar-c>
     <script src="/components/navbarC.js"></script>
     <section height="300px"></section>
@@ -45,7 +45,7 @@
                 </a>
             </div>
             <div class="col-sm-6 d-flex align-items-end">   
-                <a href="/cart.html" class="btn btn-secondary mb-4 btn-lg pl-5 pr-5 d-flex align-items-end">Update Cart</a>
+                <a href="javascript:updateCart()" onclick="" class="btn btn-secondary mb-4 btn-lg pl-5 pr-5 d-flex align-items-end">Update Cart</a>
                 <a href="/checkout.html" class="btn btn-danger mb-4 btn-lg pl-5 pr-5 d-flex align-items-end">Checkout</a>
             </div>
         </div>
