@@ -22,7 +22,7 @@ async function insertFoodS(food) {
   var foodPrice = await grabPrice(food);
   var foodQty = await grabQuantity(food);
   var table = document.getElementById("shoppingCart");
-  var row = table.insertRow(0);
+  var row = table.insertRow(-1);
   var nameAndDesc = row.insertCell(0);
   var price = row.insertCell(1);
   var qty = row.insertCell(2);
@@ -129,8 +129,8 @@ async function grabQuantity (name) {
 }
 
 async function deleteRow(r, name) {
-  var i = r.parentNode.parentNode.rowIndex;
-  document.getElementById("shoppingCart").deleteRow(i);
+  var i = r.parentNode.parentNode.parentNode.rowIndex;
+  document.getElementById("shoppingCart").deleteRow(i-1);
   await deleteElement(name)
 }
 
@@ -144,7 +144,6 @@ async function putTotal () {
       b = await value.split('+')[1];
       total+=a*b
   }
-  console.log(total)
   if (isNaN(total)) {
     document.getElementById('total-price').innerHTML="$0.00";
   } else {
