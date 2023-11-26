@@ -1,6 +1,14 @@
 async function loopFood () {
   var keyValuePairs = document.cookie.split(';');
-  if (!keyValuePairs==='') {
+  cLength = 1;
+  for(var j = 0; j < keyValuePairs.length; j++) {
+    console.log("brh", keyValuePairs[j])
+    if (keyValuePairs[j]=="") {
+      cLength--;
+    }
+  }
+  console.log(cLength)
+  if (cLength!=0) {
     for(var i = 0; i < keyValuePairs.length; i++) {
       var c2 = keyValuePairs[i].substring(keyValuePairs[i].indexOf('=')+1).trim();
       var name = c2.split('+')[0].trim();
