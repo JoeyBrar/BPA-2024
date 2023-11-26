@@ -2,12 +2,10 @@ async function loopFood () {
   var keyValuePairs = document.cookie.split(';');
   cLength = 1;
   for(var j = 0; j < keyValuePairs.length; j++) {
-    console.log("brh", keyValuePairs[j])
     if (keyValuePairs[j]=="") {
       cLength--;
     }
   }
-  console.log(cLength)
   if (cLength!=0) {
     for(var i = 0; i < keyValuePairs.length; i++) {
       var c2 = keyValuePairs[i].substring(keyValuePairs[i].indexOf('=')+1).trim();
@@ -15,6 +13,7 @@ async function loopFood () {
       await insertFoodS(name);
     }
   }
+  putTotal()
 }
 
 async function insertFoodS(food) {
@@ -135,7 +134,7 @@ async function deleteRow(r, name) {
   await deleteElement(name)
 }
 
-async function grabTotal () {
+async function putTotal () {
   var keyValuePairs = document.cookie.split(';');
   let total = 0
   for(var i = 0; i < keyValuePairs.length; i++) {
@@ -145,6 +144,11 @@ async function grabTotal () {
       b = await value.split('+')[1];
       total+=a*b
   }
-  //console.log(total)
-  return await total
+  console.log(total)
+  if (isNaN(total)) {
+    document.getElementById('total-price').innerHTML="$0.00";
+  } else {
+    document.getElementById('total-price').innerHTML=`$${total}`;
+  }
+  
 }
