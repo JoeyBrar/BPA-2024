@@ -1,9 +1,11 @@
 async function loopFood () {
   var keyValuePairs = document.cookie.split(';');
-  for(var i = 0; i < keyValuePairs.length; i++) {
+  if (!keyValuePairs==='') {
+    for(var i = 0; i < keyValuePairs.length; i++) {
       var c2 = keyValuePairs[i].substring(keyValuePairs[i].indexOf('=')+1).trim();
       var name = c2.split('+')[0].trim();
       await insertFoodS(name);
+    }
   }
 }
 
@@ -121,7 +123,6 @@ async function grabQuantity (name) {
 
 async function deleteRow(r, name) {
   var i = r.parentNode.parentNode.rowIndex;
-  var tbl = document.getElementById("shoppingCart");
   document.getElementById("shoppingCart").deleteRow(i);
   await deleteElement(name)
 }
