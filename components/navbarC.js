@@ -61,7 +61,7 @@ class navbarC extends HTMLElement {
           <a class="nav-link" href="/aboutus.html" id="about-us">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/checkout.html" id="checkout">Checkout</a>
+          <a class="nav-link" href="/cart.html" id="checkout">Cart</a>
         </li>
       </ul>
     </div>
