@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Day Grill</title>
-    <meta name="description" content="Game Day Grill -- the ultimate haven for food enthusiasts and sports lovers alike.">
-    <meta name="keywords" content="Grill, Bar, Food, Resturant">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-  </head>
-  <body>
-    <navbar-c page="about-us"></navbar-c>
-    <script src="/components/navbarC.js"></script>
-    <section height="300px"></section>
-    <style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Day Grill</title>
+  <meta name="description" content="Game Day Grill -- the ultimate haven for food enthusiasts and sports lovers alike.">
+  <meta name="keywords" content="Grill, Bar, Food, Resturant">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons-1.11.2/font/bootstrap-icons.css">
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+  <navbar-c page="about-us"></navbar-c>
+  <script src="/components/navbarC.js"></script>
+  <section height="300px"></section>
+  <style>
     .hero-container {
       position: relative;
       background: url('https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat; 
@@ -28,31 +29,70 @@
       text-align: center;
       color: #fff;
     }
+
+    .person {
+      width: 100% !important;
+      height: 350px !important;
+      object-fit: cover !important;
+    }
   </style>
-</head>
+
   <header class="hero-container">
-    <div class="overlay rounded py-1 ">
+    <div class="overlay rounded py-1">
       <h1 class="display-2">About  Us</h1>
     </div>
   </header>
-    <div class="py-5 text-center">
-      <h3 class="display-5 mb-2 text-center">Huron BPA Chapter</h3>
-      <p class="py-2">This website was created proudly by the Website Design Team at the Ann Arbor Huron Chapter. With over 90 members, BPA is one of the largest clubs in the school. The Huron BPA Chapter recognizes the importance of sportsmanship within competitions and stresses the importance of community service. As a chapter, we pride ourselves in contributing to a passionate, diligent, and motivated community full of leaders and young scholars.</p>
-      <button class="btn btn-danger">Learn More</button>
-    </div>
-    <div class="py-5 text-center">
-      <h3 class="display-5 mb-2 text-center">Meet the Team</h3>
-    </div>
-    <div class="row m-5 border">
-      <div class="col-auto">
-        <img src="" alt="">
-      </div>
-      <div class="col-auto">
 
+  <div class="container text-center">
+    <h1 class="pt-4 display-5">Huron BPA Chapter</h1>
+    <p class="py-3 text-start">This website was created proudly by the Website Design Team at the Ann Arbor Huron Chapter. With over 90 members, BPA is one of the largest clubs in the school. The Huron BPA Chapter recognizes the importance of sportsmanship within competitions and stresses the importance of community service. As a chapter, we pride ourselves in contributing to a passionate, diligent, and motivated community full of leaders and young scholars.</p>
+    <button class="btn btn-danger">FIND OUT MORE!</button>
+  </div>
+
+  <div class="container py-4">
+    <div class="row">
+      <h3 class="display-5 mb-2 text-center">Meet the Team!</h3>
+    </div>
+    <div class="row d-flex justify-content-center text-center">
+      <div class="col-sm-3">
+        <div class="rounded p-2">
+          <img src="assets/people/joey.jpg" class="img-fluid rounded person" alt="Joey Brar">
+          <h3 class="pt-2">Joey Brar</h3>
+          <p class="role text-secondary lead">Programmer</p>
+          <a href="https://www.instagram.com/joey.zsb/" target="_blank"><i class="bi bi-instagram text-black h3"></i></a>
+          <a href="https://github.com/JoeyBrar" target="_blank"><i class="bi bi-github text-black m-2 h3"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="rounded p-2">
+          <img src="assets/people/rudradip.jpg" class="img-fluid rounded person" alt="Rudradip Ray">
+          <h3 class="pt-2">Rudradip Ray</h3>
+          <p class="role text-secondary lead">Programmer</p>
+          <a href="https://www.instagram.com/rudadrip/" target="_blank"><i class="bi bi-instagram text-black h3"></i></a>
+          <a href="https://github.com/rudadrip" target="_blank""><i class="bi bi-github text-black m-2 h3"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="rounded p-2">
+          <img src="assets/people/sean.png" class="img-fluid rounded person" alt="Sean Miao">
+          <h3 class="pt-2">Sean Miao</h3>
+          <p class="role text-secondary lead">Content Manager</p>
+          <a href="https://www.instagram.com/_sean.m28/" target="_blank"><i class="bi bi-instagram text-black h3"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="rounded p-2">
+          <img src="assets/people/tom.jpg" class="img-fluid rounded person" alt="Tom Tan">
+          <h3 class="pt-2">Tom Tan</h3>
+          <p class="role text-secondary lead">Content Manager</p>
+          <a href="https://www.instagram.com/tom_tangent/" target="_blank"><i class="bi bi-instagram text-black h3"></i></a>
+        </div>
       </div>
     </div>
-    <footer-c></footer-c>
-    <script src="/components/footerC.js"></script>
-  </body>
+  </div>
+
+  <footer-c></footer-c>
+  <script src="/components/footerC.js"></script>
+</body>
 
 </html>     
