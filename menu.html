@@ -56,7 +56,7 @@
             <p>Tender chicken wings coated in your choice of tangy barbecue,
               spicy buffalo,
               or honey mustard glaze. Served with celery sticks and ranch dressing <b>$4.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Buffalo Wings')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Buffalo Wings'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Grilled Quesadillas</h5>
@@ -65,14 +65,14 @@
               and your choice of seasoned chicken,
               steak,
               or shrimp. Served with salsa and sour cream <b>$3.95</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Quesadillas')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Quesadillas'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Loaded Potato Skins</h5>
             <p>Crispy potato skins stuffed with cheddar cheese,
               crispy bacon,
               and scallions. Served with sour cream for dipping <b>$1.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Potato Skins')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Potato Skins'); showToast()">+</button>
           </div>
         </div><br>
         <div class="row">
@@ -81,7 +81,7 @@
             <p>A plate of assorted vegetables grilled thoroughly with light seasoning
               <b>$2.50</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Veggie Platter')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Veggie Platter'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Fried Calamari</h5>
@@ -89,7 +89,7 @@
               <b>$3.99</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fried Calamari')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fried Calamari'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -100,13 +100,13 @@
             <h5>Classic Caesar Salad</h5>
             <p>Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing. <b>$3.85</b></p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Classic Caesar Salad')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Classic Caesar Salad'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Southwest Steak Salad</h5>
             <p>Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty
               chipotle ranch dressing. <b>$5.98</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Southwest Steak Salad')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Southwest Steak Salad'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Chicken Salad</h5>
@@ -114,7 +114,7 @@
               <b>$4.79</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Salad')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Salad'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -125,26 +125,26 @@
             <h5>Tomato Soup</h5>
             <p>Velvety soup with cherry tomato and fresh basil. <b>$3.99</b></p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Tomato Soup')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Tomato Soup'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>French Onion Soup</h5>
             <p>Slow-cooked soup offering flavors of caramelized onion and a savory, cheesy broth. <b>$5.25</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('French Onion Soup')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('French Onion Soup'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Seafood Chowder</h5>
             <p>A blend of succulent crab, shrimp, and tender white fish, served as a creamy, steaming chowder.
               <b>$6.79</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Seafood Chowder')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Seafood Chowder'); showToast()">+</button>
           </div>
         </div><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Chicken Noodle</h5>
             <p>A warm blend of chicken and flavourful broth. <b>$3.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Noodle')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Noodle'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -155,14 +155,14 @@
             <h5>Signature Gameday Burger</h5>
             <p>A hearty 1/2-pound beef patty piled high with all your game day favorites. This masterpiece features
               crispy bacon, cheddar cheese, jalapeños, and a drizzle of spicy homemade sauce. <b>$13.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Signature Gameday Burger')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Signature Gameday Burger'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>The Classic Burger</h5>
             <p>A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice
               of cheese. Add bacon or avocado for extra flavor. <b>$10.99</b></p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('The Classic Burger')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('The Classic Burger'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Grilled Chicken Club</h5>
@@ -171,7 +171,7 @@
             </p>
             <br>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Chicken Club')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Chicken Club'); showToast()">+</button>
           </div>
         </div><br>
         <div class="row">
@@ -181,7 +181,7 @@
               <b>$11.99</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Veggie Burger')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Veggie Burger'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>BBQ Pulled Pork Sandwich</h5>
@@ -189,7 +189,7 @@
               brioche bun.
               <b>$9.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('BBQ Pulled Pork Sandwich')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('BBQ Pulled Pork Sandwich'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@
               <b>$13.86</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('New York Strip Steak')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('New York Strip Steak'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Grilled Salmon</h5>
@@ -210,7 +210,7 @@
               served with your choice of side.
               <b>$12.50</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Salmon')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Salmon'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Barbecue Ribs</h5>
@@ -218,7 +218,7 @@
               cornbread.
               <b>$11.95</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Barbecue Ribs')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Barbecue Ribs'); showToast()">+</button>
           </div>
         </div><br>
         <div class="row">
@@ -228,7 +228,7 @@
               grilled vegetables.
               <b>$14.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Shrimp Skewers')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Shrimp Skewers'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Lobster Tail</h5>
@@ -236,7 +236,7 @@
               <b>$17.99</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Lobster Tail')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Lobster Tail'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -249,21 +249,21 @@
               <b>$5.25</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Garlic Parmesan Fries')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Garlic Parmesan Fries'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Loaded Baked Potato</h5>
             <p>A baked potato topped with butter, sour cream, cheddar cheese, and bacon bits.
               <b>$3.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Baked Potato')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Baked Potato'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>French Fries</h5>
             <p>Crispy, fried, and salted fries served warm with your meal.
               <b>$4.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('French Fries')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('French Fries'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -276,7 +276,7 @@
               chocolate sauce
               <b>$2.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Molten Lava Cake')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Molten Lava Cake'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Cheesecake of the Day</h5>
@@ -284,7 +284,7 @@
               <b>$3.25</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Cheesecake of the Day')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Cheesecake of the Day'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Key Lime Pie</h5>
@@ -292,28 +292,28 @@
               <b>$6.99</b>
             </p>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Key Lime Pie')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Key Lime Pie'); showToast()">+</button>
           </div>
         </div><br>
         <div class="row">
           <div class="col-sm-4">
             <h5>Chocolate Mousse</h5>
             <p>Tasty chocolate mousse topped with whipped cream and chocolate shavings <b>$6.49</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chocolate Mousse')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chocolate Mousse'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Peach Cobbler</h5>
             <p>Sweet, juicy peaches and topped with a golden, flaky crust, sprinkled with cinnamon
               <b>$7.89</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Peach Cobbler')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Peach Cobbler'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Fruit Platter</h5>
             <p>An assortment of fresh berries, melon, pineapple, and grapes
               <b>$2.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fruit Platter')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fruit Platter'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -326,7 +326,7 @@
               beer, served with plenty of ice. Free refills are included!
               <b>$2.49</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Soft Drinks')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Soft Drinks'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>A selection of Craft Beers and Wines</h5>
@@ -347,7 +347,7 @@
               black, with cream, or sweetened, our coffee is the perfect way to wrap up your meal.
               <b>$2.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Coffee')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Coffee'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Iced Tea</h5>
@@ -355,7 +355,7 @@
               Garnished with a lemon slice, it's a classic choice for a refreshing beverage.
               <b>$2.99</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Iced Tea')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Iced Tea'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>Fruit Juice</h5>
@@ -363,7 +363,7 @@
               cranberry, or pineapple to enjoy a burst of natural fruit flavors with your meal.
               <b>$3.49</b>
             </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fruit Juice')">+</button>
+            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fruit Juice'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -424,22 +424,29 @@
         } */
 
       </style>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              Added to Cart!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+              aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
       <script>
-        function notify() {
-          let toastContent = document.createElement("div");
-          let toast = document.getElementById("toast");
-          toastContent.classList.add("toastContent");
-          toastContent.innerHTML = `<h3>Successfully Added to Cart!</h3>`;
-          toast.appendChild(toastContent);
-          setTimeout(() => {
-            toast.removeChild(toastContent);
-          }, 3000);
+        function showToast() {
+          const toastLiveExample = document.getElementById('liveToast')
+          const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+          toastBootstrap.show()
         }
-        window.onload = function() {
-          // document.getElementById("appetizer").classList.add("active");
-        }
+    
       </script>
-      <section class="py-5"></section>
+      <section class="py-5 d-flex justify-content-center">
+          <a href="/cart.html" class="btn btn-danger btn-lg d-flex">Go to Cart</a>
+        </section>
+      </section>
       <footer-c></footer-c>
       <script src="/components/footerC.js"></script>
 
