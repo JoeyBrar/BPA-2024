@@ -53,7 +53,11 @@
         height: 350px !important;
         object-fit: cover !important;
       }
-      
+
+      .carousel-control-next,
+      .carousel-control-prev {
+          filter: invert(100%);
+      }     
     </style>
     
     <section class="hero py-5 bg-dark mb-5">
@@ -63,8 +67,8 @@
             <h1 class="display-1 red-text fw-bold">Game Day</h1>
             <h1 class="display-1 text-white fw-bold">Grill</b></h1>
             <p class="mb-4 pb-2 text-white fw-light">Indulge in the ultimate culinary adventure where savory flavors meet adrenaline-pumping sports excitement. At Game Day Grill, each bite is a winning touchdown.</p>
-            <button type="button" class="btn btn-danger btn-lg px-4 py-1">Order Now</button>
-            <button type="button" class="btn btn-secondary btn-lg px-4 py-1 m-3">Make  Reservation</button>
+            <a class="btn btn-danger btn-lg px-4 py-1" href="/menu.html">Order Now</a>
+            <a class="btn btn-secondary btn-lg px-4 py-1 m-3" href="/reservation.html">Make Reservation</a>
           </div>
         </div>
       </div>
@@ -102,53 +106,163 @@
         </div>
       </div>
     </div>
-
-    <section class="py-4"></section>
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <h1 class="text-center">What our Customers Say</h1>
-        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
-          <div class="card-body">
-            <div class="col pb-2 py-1">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-half text-warning"></i> 
-            </div>
-            <h5 class="card-title">QUALITY SERVICE</h5>
-            <p class="card-text">The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
-          </div>
-        </div>
-        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
-          <div class="card-body">
-            <div class="col pb-2 py-1">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i> 
-            </div>
-            <h5 class="card-title">FIVE STARS</h5>
-            <p class="card-text">Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
-          </div>
-        </div>
-        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
-          <div class="card-body">
-            <div class="col pb-2 py-1">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i> 
-            </div>
-            <h5 class="card-title">FOOD WAS GREAT</h5>
-            <p class="card-text">The food served at this restaurant is delicious, palatable and flavorful. The waiters were extremely kind and helpful. If I could give this restaurant 10 stars, I would.</p>
-          </div>
-        </div>
-      </div>
-    </div>
     
+    </style>
+    <section class="py-4"></section>
+    <div id="reviewCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container mx-auto">
+            <div class="row justify-content-center">
+            
+  
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">QUALITY SERVICE</h5>
+                  <p class="card-text">The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
+                </div>
+              </div>
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">FIVE STARS</h5>
+                  <p class="card-text">Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
+                </div>
+              </div>
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">FOOD WAS GREAT</h5>
+                  <p class="card-text">The food served at this restaurant is delicious, palatable and flavorful. The waiters were extremely kind and helpful. If I could give this restaurant 10 stars, I would.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container mx-auto">
+            <div class="row justify-content-center">
+
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">review name2</h5>
+                  <p class="card-text">review text</p>
+                </div>
+              </div>
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">review name2</h5>
+                  <p class="card-text">review text</p>
+                </div>
+              </div>
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">review name2</h5>
+                  <p class="card-text">review text</p>
+                </div>
+              </div>
+    
+            </div> 
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container mx-auto">
+            <div class="row justify-content-center">
+
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">review name2</h5>
+                  <p class="card-text">review text</p>
+                </div>
+              </div>
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">review name2</h5>
+                  <p class="card-text">review text</p>
+                </div>
+              </div>
+              <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i>
+                    <i class="bi bi-star text-warning"></i> 
+                  </div>
+                  <h5 class="card-title">review name2</h5>
+                  <p class="card-text">review text</p>
+                </div>
+              </div>
+    
+            </div> 
+          </div>
+        </div>
+          
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
     <section class="py-4"></section>
     <div class="container">
       <div class="row">
@@ -196,7 +310,6 @@
       }; 
       map.addEventListener ('mouseover', maplistner);     
     </script>
-
 
     <footer-c></footer-c>
     <script src="/components/footerC.js"></script>
