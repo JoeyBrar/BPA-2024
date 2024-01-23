@@ -78,6 +78,7 @@ function deleteElement (name) {
     cs2=c2.split('+');
     if (c2==`${name}+${cs2[1]}`) {
       document.cookie = `${c1}=${c2};expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+      putTotal()
       break;
     }
   }
