@@ -15,7 +15,7 @@ class footerC extends HTMLElement {
 <div class="container align-items-center">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <p class="col-md-4 mb-0 text-body-secondary text-center justify-content-center mx-auto multiline">
-    123 Easy St. Funland, Michigan. 12345
+    2727 Fuller Rd, Ann Arbor, Michigan. 48105
     11:30am-9pm M-F, Noon-9pm S-S
     (987)-654-3210
     </p>
