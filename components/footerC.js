@@ -20,7 +20,7 @@ class footerC extends HTMLElement {
     (987)-654-3210
     </p>
     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img src="/assets/logo.png" alt="Game Day Grill" style="max-width:50%">
+      <img src="/assets/logo.webc" alt="Game Day Grill" style="max-width:50%">
     </a>
     <ul class="nav col-md-4 justify-content-center align-items-center text-center mx-auto">
       <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary text-center text-sm-start">Home</a></li>
