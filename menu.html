@@ -50,7 +50,7 @@
 
     <div class="tab-content">
       <div id="appetizer" class="tab-pane fade show active">
-        <div class="row equal-height-row">
+        <div class="row">
           <div class="col-sm-4">
             <div class="card">
               <img src="/assets/FOOD-IMAGE/Appetizer/Buffalo-Wings.jpg" class="card-img-top" alt="...">
@@ -60,7 +60,9 @@
                 <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Buffalo Wings'); showToast()">+</button>
               </div>
             </div>
+            <br>
           </div>
+          
           <div class="col-sm-4">
             <div class="card">
               <img src="/assets/FOOD-IMAGE/Appetizer/Grilled-Quesadillas.jpg" class="card-img-top" alt="...">
@@ -74,7 +76,9 @@
                   <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Quesadillas'); showToast()">+</button>
                 </div>
             </div>
+            <br>
           </div>
+          
           <div class="col-sm-4">
             <div class="card">
               <img src="/assets/FOOD-IMAGE/Appetizer/Loaded-Potato-Skins.jpg" class="card-img-top" alt="...">
@@ -86,8 +90,9 @@
                   <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Potato Skins'); showToast()">+</button>
                 </div>
             </div>
+            <br>
           </div>
-        </div><br>
+        </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="card">
@@ -100,6 +105,7 @@
                 <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Veggie Platter'); showToast()">+</button>
               </div>
             </div>
+            <br>
           </div>
           <div class="col-sm-4">
             <div class="card">
@@ -112,10 +118,10 @@
                 <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fried Calamari'); showToast()">+</button>
               </div>
             </div>
+            <br>
           </div>
         </div>
       </div>
-
       <div id="salads" class="tab-pane fade">
         <div class="row">
           <div class="col-sm-4">
@@ -127,7 +133,9 @@
                 <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Classic Caesar Salad'); showToast()">+</button>
               </div>
             </div>
+            <br>
           </div>
+          
           <div class="col-sm-4">
             <div class="card">
               <img src="/assets/FOOD-IMAGE/Salad/Southwest-Steak-Salad.jpg" class="card-img-top" alt="...">
@@ -138,6 +146,7 @@
                   <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Southwest Steak Salad'); showToast()">+</button>
                 </div>
             </div>
+            <br>
           </div>
           <div class="col-sm-4">
             <div class="card">
@@ -158,29 +167,52 @@
       <div id="soups" class="tab-pane fade">
         <div class="row">
           <div class="col-sm-4">
-            <h5>Tomato Soup</h5>
-            <p>Velvety soup with cherry tomato and fresh basil. <b>$3.99</b></p>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Soup/Tomato-Soup.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tomato Soup</h5>
+                <p>Velvety soup with cherry tomato and fresh basil. <b>$3.99</b></p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Tomato Soup'); showToast()">+</button>
+              </div>
+            </div>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Tomato Soup'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
-            <h5>French Onion Soup</h5>
-            <p>Slow-cooked soup offering flavors of caramelized onion and a savory, cheesy broth. <b>$5.25</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('French Onion Soup'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Soup/French-Onion-Soup.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">French Onion Soup</h5>
+                <p>Slow-cooked soup offering flavors of caramelized onion and a savory, cheesy broth. <b>$5.25</b></p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('French Onion Soup'); showToast()">+</button>
+              </div>
+            </div>
+            <br>
           </div>
           <div class="col-sm-4">
-            <h5>Seafood Chowder</h5>
-            <p>A blend of succulent crab, shrimp, and tender white fish, served as a creamy, steaming chowder.
-              <b>$6.79</b>
-            </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Seafood Chowder'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Soup/Seafood-Chowder.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Seafood Chowder</h5>
+                <p>A blend of succulent crab, shrimp, and tender white fish, served as a creamy, steaming chowder.
+                  <b>$6.79</b>
+                </p>                
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Seafood Chowder'); showToast()">+</button>
+              </div>
+            </div>
+            <br>
           </div>
         </div><br>
         <div class="row">
           <div class="col-sm-4">
-            <h5>Chicken Noodle</h5>
-            <p>A warm blend of chicken and flavourful broth. <b>$3.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Noodle'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Soup/Chicken-Noodle.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Noodle</h5>
+                <p>A warm blend of chicken and flavourful broth. <b>$3.99</b></p>               
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Noodle'); showToast()">+</button>
+              </div>
+            </div>
+            <br>
           </div>
         </div>
       </div>
@@ -188,36 +220,55 @@
       <div id="burgers" class="tab-pane fade">
         <div class="row">
           <div class="col-sm-4">
-            <h5>Signature Gameday Burger</h5>
-            <p>A hearty 1/2-pound beef patty piled high with all your game day favorites. This masterpiece features
-              crispy bacon, cheddar cheese, jalapeños, and a drizzle of spicy homemade sauce. <b>$13.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Signature Gameday Burger'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Burger-Sandwich/Signature-Gameday-Burger.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Signature Gameday Burger</h5>
+                <p>A hearty 1/2-pound beef patty piled high with all your game day favorites. This masterpiece features
+                  crispy bacon, cheddar cheese, jalapeños, and a drizzle of spicy homemade sauce. <b>$13.99</b></p>            
+                  <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Signature Gameday Burger'); showToast()">+</button>
+                </div>
+            </div>
+            <br>
           </div>
           <div class="col-sm-4">
-            <h5>The Classic Burger</h5>
-            <p>A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice
-              of cheese. Add bacon or avocado for extra flavor. <b>$10.99</b></p>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Burger-Sandwich/The-Classic-Burger.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Classic Burger</h5>
+                <p>A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice
+                  of cheese. Add bacon or avocado for extra flavor. <b>$10.99</b></p>           
+                  <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('The Classic Burger'); showToast()">+</button>
+                </div>
+            </div>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('The Classic Burger'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
-            <h5>Grilled Chicken Club</h5>
-            <p>Grilled chicken breast topped with bacon, Swiss cheese, lettuce, tomato, and mayo on a toasted bun.
-              <b>$10.99</b>
-            </p>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Burger-Sandwich/Grilled-Chicken-Club.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grilled Chicken Club</h5>
+                <p>A juicy 1/2-pound beef patty grilled to perfection, served with lettuce, tomato, onion, and your choice
+                  of cheese. Add bacon or avocado for extra flavor. <b>$10.99</b></p>           
+                  <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Chicken Club'); showToast()">+</button>
+                </div>
+            </div>
             <br>
-            <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Chicken Club'); showToast()">+</button>
           </div>
-        </div><br>
+        </div>
         <div class="row">
           <div class="col-sm-4">
-            <h5>Veggie Burger</h5>
-            <p>A delicious plant-based patty grilled and served with lettuce, tomato, onion, and your choice of cheese.
-              <b>$11.99</b>
-            </p>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Burger-Sandwich/Veggie-Burger.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grilled Chicken Club</h5>
+                <p>A delicious plant-based patty grilled and served with lettuce, tomato, onion, and your choice of cheese.
+                  <b>$11.99</b>
+                </p>        
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Veggie Burger'); showToast()">+</button>
+              </div>
+            </div>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Veggie Burger'); showToast()">+</button>
           </div>
           <div class="col-sm-4">
             <h5>BBQ Pulled Pork Sandwich</h5>
