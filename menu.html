@@ -43,53 +43,75 @@
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#burgers">Burgers & Sandwiches</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#grilled">From the Grill</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sides">Sides</a></li>
-      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#deserts">Deserts</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#deserts">Desserts</a></li>
       <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#beverages">Beverages</a></li>
     </ul>
     <br>
 
     <div class="tab-content">
       <div id="appetizer" class="tab-pane fade show active">
-        <div class="row">
+        <div class="row equal-height-row">
           <div class="col-sm-4">
-            <h5>Buffalo Wings</h5>
-            <p>Tender chicken wings coated in your choice of tangy barbecue,
-              spicy buffalo,
-              or honey mustard glaze. Served with celery sticks and ranch dressing <b>$4.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Buffalo Wings'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Appetizer/Buffalo-Wings.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Buffalo Wings</h5>
+                <p class="card-text">Tender chicken wings coated in your choice of tangy barbecue, spicy buffalo, or honey mustard glaze. Served with celery sticks and ranch dressing <b>$4.99</b></p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Buffalo Wings'); showToast()">+</button>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <h5>Grilled Quesadillas</h5>
-            <p>Flour tortillas filled with melted cheese,
-              grilled veggies,
-              and your choice of seasoned chicken,
-              steak,
-              or shrimp. Served with salsa and sour cream <b>$3.95</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Quesadillas'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Appetizer/Grilled-Quesadillas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grilled Quesadillas</h5>
+                <p class="card-text">Flour tortillas filled with melted cheese,
+                  grilled veggies,
+                  and your choice of seasoned chicken,
+                  steak,
+                  or shrimp. Served with salsa and sour cream <b>$3.95</b></p>
+                  <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Quesadillas'); showToast()">+</button>
+                </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <h5>Loaded Potato Skins</h5>
-            <p>Crispy potato skins stuffed with cheddar cheese,
-              crispy bacon,
-              and scallions. Served with sour cream for dipping <b>$1.99</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Potato Skins'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Appetizer/Loaded-Potato-Skins.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Loaded Potato Skins</h5>
+                <p class="card-text"><p>Crispy potato skins stuffed with cheddar cheese,
+                  crispy bacon,
+                  and scallions. Served with sour cream for dipping <b>$1.99</b></p></p>
+                  <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Loaded Potato Skins'); showToast()">+</button>
+                </div>
+            </div>
           </div>
         </div><br>
         <div class="row">
           <div class="col-sm-4">
-            <h5>Grilled Veggie Platter</h5>
-            <p>A plate of assorted vegetables grilled thoroughly with light seasoning
-              <b>$2.50</b>
-            </p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Veggie Platter'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Appetizer/Grilled-Veggie-Platter.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Grilled Veggie Platter</h5>
+                <p class="card-text"><p>A plate of assorted vegetables grilled thoroughly with light seasoning
+                  <b>$2.50</b>
+                </p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Grilled Veggie Platter'); showToast()">+</button>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <h5>Fried Calamari</h5>
-            <p>Fried Squid
-              <b>$3.99</b>
-            </p>
-            <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fried Calamari'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Appetizer/Fried-Calamari.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fried Calamari</h5>
+                <p>Fried Squid
+                  <b>$3.99</b>
+                </p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Fried Calamari'); showToast()">+</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,24 +119,38 @@
       <div id="salads" class="tab-pane fade">
         <div class="row">
           <div class="col-sm-4">
-            <h5>Classic Caesar Salad</h5>
-            <p>Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing. <b>$3.85</b></p>
-            <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Classic Caesar Salad'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Salad/Classic-Caesar-Salad.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Classic Caesar Salad</h5>
+                <p>Crisp romaine lettuce, croutons, and Parmesan cheese tossed in creamy Caesar dressing. <b>$3.85</b></p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Classic Caesar Salad'); showToast()">+</button>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <h5>Southwest Steak Salad</h5>
-            <p>Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty
-              chipotle ranch dressing. <b>$5.98</b></p>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Southwest Steak Salad'); showToast()">+</button>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Salad/Southwest-Steak-Salad.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Southwest Steak Salad</h5>
+                <p>Sliced grilled steak on a bed of mixed greens, topped with black beans, corn, avocado, and a zesty
+                  chipotle ranch dressing. <b>$5.98</b></p>
+                  <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Southwest Steak Salad'); showToast()">+</button>
+                </div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <h5>Chicken Salad</h5>
-            <p>Shredded chicken, garden lettuce, cranberries, and accompanied by a variety of dressing flavors.
-              <b>$4.79</b>
-            </p>
+            <div class="card">
+              <img src="/assets/FOOD-IMAGE/Salad/Chicken-Salad.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Salad</h5>
+                <p>Shredded chicken, garden lettuce, cranberries, and accompanied by a variety of dressing flavors.
+                  <b>$4.79</b>
+                </p>
+                <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Salad'); showToast()">+</button>
+              </div>
+            </div>
             <br>
-            <button class="btn btn-outline-secondary" id="addCart" onclick="incrementFood('Chicken Salad'); showToast()">+</button>
           </div>
         </div>
       </div>
@@ -232,7 +268,7 @@
           </div>
           <div class="col-sm-4">
             <h5>Lobster Tail</h5>
-            <p>sizzling, succulent lobster meat grilled to perfection, seasoned lightly with a garlic and lemon drizzle.
+            <p>Sizzling, succulent lobster meat grilled to perfection, seasoned lightly with a garlic and lemon drizzle.
               <b>$17.99</b>
             </p>
             <br>
