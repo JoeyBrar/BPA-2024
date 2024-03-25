@@ -7,10 +7,10 @@
     <meta name="description" content="Game Day Grill -- the ultimate haven for food enthusiasts and sports lovers alike.">
     <meta name="keywords" content="Grill, Bar, Food, Resturant">
     <meta name="author" content="2023-24 Huron BPA WSDT">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" defer>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-icons-1.11.2/font/bootstrap-icons.css">
-    <script type="text/javascript" src="js/bootstrap.js" defer></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" defer></script>
     <script type="text/javascript" src="js/index.js" defer></script>
     <link rel="preload" href="/assets/reg-imgs/GameDayGrillLocation.webp" as="image" type="image/webp" crossorigin>
   </head>
@@ -53,7 +53,30 @@
         height: 350px !important;
         object-fit: cover !important;
       }
+
+      .carousel-control-next,
+      .carousel-control-prev {
+          filter: invert(100%);
+      }     
+
+      @media (max-width: 991px) {
+        #reviewDesktop {
+          display: none;
+        }
+      }
       
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-sm-6 { 
+          width: auto;
+        }
+      }
+
+      @media (min-width: 992px) {
+        #reviewCarousel {
+          display: none;
+        }
+      }
+  
     </style>
     
     <section class="hero py-5 bg-dark mb-5">
@@ -63,7 +86,7 @@
             <h1 class="display-1 red-text fw-bold">Game Day</h1>
             <h1 class="display-1 text-white fw-bold">Grill</b></h1>
             <p class="mb-4 pb-2 text-white fw-light">Indulge in the ultimate culinary adventure where savory flavors meet adrenaline-pumping sports excitement. At Game Day Grill, each bite is a winning touchdown.</p>
-            <a class="btn btn-danger btn-lg px-4 py-1" href="/menu.html">Order Now</a>  
+            <a class="btn btn-danger btn-lg px-4 py-1" href="/menu.html">Order Now</a>
             <a class="btn btn-secondary btn-lg px-4 py-1 m-3" href="/reservation.html">Make Reservation</a>
           </div>
         </div>
@@ -76,7 +99,7 @@
         <div class="col-md-6 col-xs-12 text-center d-flex align-items-center">
           <div class="row mb-4">
             <h1 class="mb-4">We're glad you're here.</h1>
-            <p class="mb-4">Welcome! Our all-famous Game-Day Grill is back, celebrating flavor and fun anew. Located at the heart of Ann Arbor, Michigan, our restaurant is a haven for food enthusiasts and sports aficionados alike. Whether you're joining us to catch the big game on our massive screens or simply looking for a delectable meal, we've got you covered. Dive into our menu filled with mouthwatering dishes inspired by the excitement of game day, from hearty burgers and sizzling wings to refreshing salads and flavorful vegetarian options. At Game-Day Grill, we believe that good times and great food go hand in hand. Join us on this unforgettable culinary journey that’ll surely transcend your tastebuds.</p> 
+            <p class="mb-4 text-start">&nbsp&nbsp&nbsp&nbspWelcome! Our all-famous Game-Day Grill is back, celebrating flavor and fun anew. Located at the heart of Ann Arbor, Michigan, our restaurant is a haven for food enthusiasts and sports aficionados alike. Whether you're joining us to catch the big game on our massive screens or simply looking for a delectable meal, we've got you covered. Dive into our menu filled with mouthwatering dishes inspired by the excitement of game day, from hearty burgers and sizzling wings to refreshing salads and flavorful vegetarian options. At Game-Day Grill, we believe that good times and great food go hand in hand. Join us on this unforgettable culinary journey that’ll surely transcend your tastebuds.</p> 
             <div class="col-sm-6">
               <div class="d-flex align-items-center border-start border-5 border-danger px-3">
                 <h1 class="big-text display-5 mb-0">12+</h1>
@@ -98,42 +121,16 @@
           </div>
         </div>
         <div class="col-md-6 col-xs-12 text-center d-flex align-items-center">
-          <img src="/assets/reg-imgs/pexels-rdne-stock-project-5779787.jpg" class="rounded sizing" alt="Chef cooking inside the Game Day Grill">
+          <img src="/assets/reg-imgs/pexels-rdne-stock-project-5779787.webc" class="rounded sizing" alt="Chef cooking inside the Game Day Grill">
         </div>
       </div>
     </div>
 
-    <section class="py-4"></section>
+    <section class="py-4"></section> 
     <div class="container">
       <div class="row d-flex justify-content-center">
         <h1 class="text-center">What our Customers Say</h1>
-        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
-          <div class="card-body">
-            <div class="col pb-2 py-1">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-half text-warning"></i> 
-            </div>
-            <h5 class="card-title">QUALITY SERVICE</h5>
-            <p class="card-text">The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
-          </div>
-        </div>
-        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
-          <div class="card-body">
-            <div class="col pb-2 py-1">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i> 
-            </div>
-            <h5 class="card-title">FIVE STARS</h5>
-            <p class="card-text">Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
-          </div>
-        </div>
-        <div class="card bg-outline mb-3 m-3" style="max-width: 18rem;">
+        <div class="card bg-outline mb-3 m-3" id="reviewDesktop" style="max-width: 18rem;">
           <div class="card-body">
             <div class="col pb-2 py-1">
               <i class="bi bi-star-fill text-warning"></i>
@@ -144,11 +141,99 @@
             </div>
             <h5 class="card-title">FOOD WAS GREAT</h5>
             <p class="card-text">The food served at this restaurant is delicious, palatable and flavorful. The waiters were extremely kind and helpful. If I could give this restaurant 10 stars, I would.</p>
+          </div>      
+        </div>
+        <div class="card bg-outline mb-3 m-3" id="reviewDesktop" style="max-width: 18rem;">
+          <div class="card-body">
+            <div class="col pb-2 py-1">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i> 
+            </div>
+            <h5 class="card-title">FIVE STARS</h5>
+            <p class="card-text">The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
           </div>
+        </div>
+        <div class="card bg-outline mb-3 m-3" id="reviewDesktop" style="max-width: 18rem;">
+          <div class="card-body">
+            <div class="col pb-2 py-1">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i> 
+            </div>
+            <h5 class="card-title">QUALITY SERVICE</h5>
+            <p class="card-text">Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
+          </div>
+        </div>
+
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+      
+            <div class="carousel-item active">
+              <div class="card bg-outline mb-3 m-3 mx-auto" style="max-width: 80%;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                  <h5 class="card-title">FOOD WAS GREAT</h5>
+                  <p class="card-text">The food served at this restaurant is delicious, palatable, and flavorful. The waiters were extremely kind and helpful. If I could give this restaurant 10 stars, I would.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <div class="card bg-outline mb-3 m-3 mx-auto" style="max-width: 80%;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                  <h5 class="card-title">FIVE STARS</h5>
+                  <p class="card-text">The atmosphere of this exquisite restaurant was hospitable and warm. Celebrated a family reunion here and had a great time. Food was great and the servers were very nice. Would recommend it to everyone I know.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <div class="card bg-outline mb-3 m-3 mx-auto" style="max-width: 80%;">
+                <div class="card-body">
+                  <div class="col pb-2 py-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-half text-warning"></i>
+                  </div>
+                  <h5 class="card-title">QUALITY SERVICE</h5>
+                  <p class="card-text">Watched the football game here with my friends. Enjoyed the burgers and fries. Overall nice restaurant. Loved the large screen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
-    
+
     <section class="py-4"></section>
     <div class="container">
       <div class="row">
@@ -181,7 +266,7 @@
           </form>
         </div>
         <div class="col-md-6 col-xs-12">
-          <div data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7226.621160459755!2d-83.70703364036592!3d42.28018798204294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae94ae3d7797%3A0x7a73fbb58e79e852!2sHuron%20High%20School!5e0!3m2!1sen!2sus!4v1700784086141!5m2!1sen!2sus" id="mymap"></div>
+          <div data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7226.621160459755!2d-83.70703364036592!3d42.28018798204294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae94ae3d7797%3A0x7a73fbb58e79e852!2sHuron%20High%20School!5e0!3m2!1sen!2sus!4v1700784086141!5m2!1sen!2sus" id="mymap" class="rounded sizing" alt="Our Google Maps location"></div>
         </div>
       </div>
     </div>
@@ -196,7 +281,6 @@
       }; 
       map.addEventListener ('mouseover', maplistner);     
     </script>
-
 
     <footer-c></footer-c>
     <script src="/components/footerC.js"></script>
