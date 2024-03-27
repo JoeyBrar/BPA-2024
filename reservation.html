@@ -6,8 +6,8 @@
     <meta name="description" content="Game Day Grill -- the ultimate haven for food enthusiasts and sports lovers alike.">
     <meta name="keywords" content="Grill, Bar, Food, Resturant">
     <title>Game Day Grill</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/bootstrap.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js" defer></script>
   </head>
   <body>
     <navbar-c page="reservations"></navbar-c>
@@ -16,7 +16,7 @@
     <style>
       .hero-container {
         position: relative;
-        background: url('assets/reg-imgs/reservation-1.png') center/cover no-repeat; 
+        background: url('assets/reg-imgs/reservation-1.webc') center/cover no-repeat; 
         height: 80vh;
       }
   
@@ -33,11 +33,11 @@
     <header class="hero-container">
       <div class="overlay rounded py-1">
         <h1 class="display-2">Reservations</h1>
-        <h3>Book your Table</h3>
+        <a href="#" class="btn btn-danger" onClick="document.getElementById('reservationScroll').scrollIntoView();">Book your Table</a>
       </div>
     </header>
     <section class="py-5"></section>
-    <div class="row w-75 mx-auto justify-content-center border border-danger rounded border-2 p-5">
+    <div class="row w-75 mx-auto justify-content-center border border-danger rounded border-2 p-5" id="reservationScroll">
       <div class="col gx-5">
         <div class="row">
           <p>First Name</p>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Day Grill</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script src="/js/menuAdd.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
   <style>
     .hero-container {
       position: relative;
-      background: url('/assets/reg-imgs/pexels-omar-mahmood-106343.jpg') center/cover no-repeat; 
+      background: url('/assets/reg-imgs/pexels-omar-mahmood-106343.webc') center/cover no-repeat; 
       height: 80vh;
     }
 
@@ -511,36 +511,6 @@
       <!--TOAST -->
 
       <style>
-        #toast {
-          position: absolute;
-          bottom: 15px;
-          right: 15px;
-          display: flex;
-          align-items: flex-end;
-          flex-direction: column;
-          overflow: hidden;
-          padding: 30px;
-        }
-
-        .toastContent {
-          width: 400px;
-          height: 80px;
-          background: #e92121;
-          color: white;
-          margin: 10px;
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          display: flex;
-          align-items: center;
-          transform: translateX(100%);
-          animation: slideFromRight 0.2s linear forwards;
-        }
-
-        @keyframes slideFromRight {
-          100% {
-            transform: translate(0);
-          }
-        }
-
         .nav-link {
           color:#000;
           transition: all 0.3s ease;
@@ -550,18 +520,8 @@
           color: #e92121;
           transition: all 0.3s ease;
         }
-
-        /* navpill animation */
-        /* .tab-pane.active {
-            animation: slide-down 0.2s ease-out;
-        }
-
-        @keyframes slide-down {
-            0% { opacity: 0; transform: translateY(100%); }
-            100% { opacity: 1; transform: translateY(0); }
-        } */
-
       </style>
+      
       <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="d-flex">
